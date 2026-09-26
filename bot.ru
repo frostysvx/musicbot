@@ -3,7 +3,9 @@ from datetime import datetime, timezone, timedelta
 import time
 import traceback
 
-BOT_TOKEN = "8643400437:AAF3Q9kybimNE9oaghoF6sxbvWN6IvRxkvI"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+
 OMSK = timezone(timedelta(hours=6))
 
 SCHEDULE = {
